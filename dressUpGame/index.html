@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2J09DVSHFM"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'G-2J09DVSHFM');
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dress Up Game</title>
+    <link rel="icon" type="image/png" href="assets/dress-up-game-icon.png?v=2" />
+    <link rel="shortcut icon" href="assets/dress-up-game-icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body
+    style="
+      background-image: url('assets/background/background-yellow.png');
+      background-color: rgb(255, 244, 182);
+    "
+  >
+    <img id="cloud" src="assets/background/cloud-1.png" alt="Cloud" class="floating-cloud" />
+    <img id="cloud" src="assets/background/cloud-2.png" alt="Cloud" class="floating-cloud-2" />
+    <img id="cloud" src="assets/background/cloud-3.png" alt="Cloud" class="floating-cloud-3" />
+
+    <div class="container">
+      <div class="inner-container">
+        <div class="main-text">
+          <img id="text-content" src="assets/text-content.png" alt="text-content" />
+        </div>
+
+        <div
+          class="pochacco-container"
+          style="background-image: url('assets/background/background-yellow.png');"
+        >
+          <button id="left-background-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="35" viewBox="0 0 28 35" fill="none">
+              <path
+                d="M2.94235 20.1573L21.8 18.9939 1.22114 16.4593 3.94235 15.2959L21.4329 2.79768C23.3813 1.48071 26.0097 2.87663 26.0097 5.22838L26.0097 30.2247C26.0097 32.5765 23.3813 33.9724 21.4329 32.6554L2.94235 20.1573Z"
+                fill="#F9FFDB"
+                stroke="#397C64"
+                stroke-width="2.93387"
+              />
+            </svg>
+          </button>
+
+          <button id="right-background-button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="35" viewBox="0 0 29 35" fill="none">
+              <path
+                d="M25.511 20.1573L7.02046 32.6554C5.07204 33.9724 2.44362 32.5765 2.44362 30.2247L2.44362 5.22838C2.44362 2.87662 5.07204 1.4807 7.02046 2.79768L25.511 15.2959C27.2322 16.4593 27.2322 18.9939 25.511 20.1573Z"
+                fill="#F9FFDB"
+                stroke="#397C64"
+                stroke-width="2.93387"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- Outfit display area -->
+        <div class="outfit-container">
+          <div id="outfit-display">
+            <img id="head" src="assets/dress-up-elements/head.png" alt="Head" />
+            <img id="shirt" src="assets/dress-up-elements/blue-shirt.png" alt="Shirt" />
+            <img id="skirt" src="assets/dress-up-elements/skirt.png" alt="Skirt" />
+            <img id="hat" src="assets/dress-up-elements/straw-hat.png" alt="Hat" />
+          </div>
+        </div>
+
+        <div class="option-panel">
+          <button
+            id="shirt-button"
+            class="option-button"
+            style="background-color: rgb(249, 255, 219);"
+          ></button>
+          <button id="skirt-button" class="option-button"></button>
+          <button id="hat-button" class="option-button"></button>
+          <button id="done-button"></button>
+        </div>
+
+        <div class="selection-container">
+          <!-- Shirt options -->
+          <div id="shirt-options" style="display: flex;">
+            <button id="shirt-1"></button>
+            <button id="shirt-2"></button>
+            <button id="shirt-3"></button>
+          </div>
+
+          <!-- Skirt options -->
+          <div id="skirt-options" style="display: none;">
+            <button id="skirt-1"></button>
+            <button id="skirt-2"></button>
+            <button id="skirt-3"></button>
+          </div>
+
+          <!-- Hat options -->
+          <div id="hat-options" style="display: none;">
+            <button id="hat-1"></button>
+            <button id="hat-2"></button>
+            <button id="hat-3"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
